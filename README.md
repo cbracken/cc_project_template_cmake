@@ -1,65 +1,66 @@
-# ProjectTemplate
+ProjectTemplate
+===============
 
 A [cmake](https://cmake.org),
 [ninja](https://github.com/ninja-build/ninja), and
 [googletest](https://github.com/google/googletest)-based C++ project template.
 
-## Prerequisites
+
+Prerequisites
+-------------
 
 To build, you'll need [cmake](https://cmake.org),
 [ninja](https://github.com/ninja-build/ninja), and a clang build toolchain
 installed on your system.
 
-## Obtaining the source
+
+Obtaining the source
+--------------------
 
 First, clone the repo:
-```shell
-git clone git@gitlab.com:cbracken/cc_project_template.git
-```
+
+    git clone git@gitlab.com:cbracken/cc_project_template.git
 
 Next, initialise and fetch git submodules:
-```shell
-# Initialise local configuration file.
-git submodule init
 
-# Fetch submodules (googletest).
-git submodule update
-```
+    # Initialise local configuration file.
+    git submodule init
 
-## Updating git submodules
+    # Fetch submodules (googletest).
+    git submodule update
+
+
+Updating git submodules
+-----------------------
 
 To update the git submodules to a newer commit, simply run:
 
-```shell
-git submodule update --remote
-```
+    git submodule update --remote
 
-## Building and running
+
+Building and running
+--------------------
 
 First, generate the ninja build files:
 
-```shell
-# For debug build:
-cmake -DCMAKE_BUILD_TYPE=Debug -GNinja
+    # For debug build:
+    cmake -DCMAKE_BUILD_TYPE=Debug -GNinja
 
-# For release build:
-cmake -DCMAKE_BUILD_TYPE=Release -GNinja
-```
+    # For release build:
+    cmake -DCMAKE_BUILD_TYPE=Release -GNinja
+
 
 ### Unit tests
 
 To build and run the unit tests, run:
 
-```shell
-ninja
-./bin/libfoo_tests
-```
+    ninja
+    ./bin/libfoo_tests
+
 
 ### Executable binary
 
 To build and run the binary:
 
-```shell
-ninja
-./bin/main
-```
+    ninja
+    ./bin/main
