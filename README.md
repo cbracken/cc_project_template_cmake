@@ -17,11 +17,7 @@ installed on your system.
 Obtaining the source
 --------------------
 
-First, clone the repo:
-
-    git clone git@gitlab.com:cbracken/cc_project_template.git
-
-Next, initialise and fetch git submodules:
+First, clone the repo. Then, initialise and fetch git submodules:
 
     # Initialise local configuration file.
     git submodule init
